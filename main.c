@@ -1,6 +1,12 @@
 #include <stdio.h>
+#include "libs/data_structures/vector/vector.h"
 
 int main() {
-    printf("Hello, World!\n");
+    vector v = createVector(0);
+
+    popBack(&v);
+
+    printf("%zu", v.size);
+
     return 0;
 }
