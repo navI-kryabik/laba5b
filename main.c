@@ -14,6 +14,23 @@ bool isEqualVectors(vector *v1, vector *v2) {
     return true;
 }
 
+void test_create_newCapacity1() {
+    vector v = createVector(3);
+    assert(v.capacity == 3 && v.size == 0 && v.data != NULL);
+    deleteVector(&v);
+}
+
+void test_create_newCapacity2() {
+    vector v = createVector(0);
+    assert(v.capacity == 0 && v.size == 0 && v.data != NULL);
+    deleteVector(&v);
+}
+
+void test_create() {
+    test_create_newCapacity1();
+    test_create_newCapacity2();
+}
+
 void test_reserve_newCapacityIsNull() {
     vector v = createVector(2);
     pushBack(&v, 1);
@@ -24,14 +41,21 @@ void test_reserve_newCapacityIsNull() {
 }
 
 void test_reserve_newCapacityIsSmaller() {
-    vector v = {(int[]) {1, 2, 3, 4}, 4, 4};
+    vector v = createVector(4);
+    pushBack(&v, 1);
+    pushBack(&v, 2);
+    pushBack(&v, 3);
+    pushBack(&v, 4);
     reserve(&v, 2);
     assert(v.size == 2);
     deleteVector(&v);
 }
 
 void test_reserve_newCapacityIsMore() {
-    vector v = {(int[]) {1, 2, 3}, 3, 3};
+    vector v = createVector(3);
+    pushBack(&v, 1);
+    pushBack(&v, 2);
+    pushBack(&v, 3);
     reserve(&v, 6);
     assert(v.capacity == 6);
     deleteVector(&v);
@@ -257,6 +281,7 @@ void test_front() {
 }
 
 void test() {
+    test_create();
     test_reserve();
     test_clear();
     test_shrinkToFit();

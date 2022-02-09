@@ -8,26 +8,21 @@ vector createVector(size_t n) {
     if (data == NULL) {
         fprintf(stderr, "bad alloc");
         exit(1);
-    } else
-        return (vector) {data, 0, n};
+    }
+    return (vector) {data, 0, n};
 }
 
 // изменяет количество памяти на newCapacity
 // выделенное под хранение элементов вектора v
 void reserve(vector *v, size_t newCapacity) {
     v->capacity = newCapacity;
-    if (v->data == NULL) {
-        v->data = (int *) realloc(v->data, sizeof(int) * newCapacity);
-        v->data = NULL;
-    }
-    if (v->data == NULL) {
+    v->data = (int *) realloc(v->data, sizeof(int) * newCapacity);
+    bool flag = newCapacity != 0;
+    if (v->data == NULL && flag) {
         fprintf(stderr, "bad alloc");
         exit(1);
-    } else if (newCapacity == 0)
-        v->data = NULL;
-    else if (newCapacity < v->size)
+    } else if (newCapacity < v->size)
         v->size = newCapacity;
-
 }
 
 // удаляет элементы из контейнера v
@@ -43,10 +38,7 @@ void shrinkToFit(vector *v) {
 
 // освобождает память, выделенную вектору v
 void deleteVector(vector *v) {
-    if (v->data == NULL) {
-        free(v->data);
-        v->data = NULL;
-    }
+    reserve(v, 0);
 }
 
 // проверяет, является ли вектор v пустым
@@ -102,7 +94,7 @@ int *back(vector *v) {
         return &v->data[v->size - 1];
 }
 
-// возвращает указатель на последний элемент вектора v.
+// возвращает указатель на первый элемент вектора v.
 int *front(vector *v) {
     if (isEmpty(v)) {
         fprintf(stderr, "Vector empty");
