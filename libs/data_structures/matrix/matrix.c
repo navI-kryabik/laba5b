@@ -1,6 +1,5 @@
 #include "matrix.h"
 #include <malloc.h>
-#include <assert.h>
 
 void swap(int *x, int *y) {
     int t = *x;
