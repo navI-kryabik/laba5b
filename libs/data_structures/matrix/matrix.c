@@ -103,7 +103,7 @@ void insertionSortRowsMatrixByRowCriteria(matrix m,
 
     int resultGetSum[m.nRows];
     for (int i = 0; i < m.nRows; i++) {
-        resultGetSum[i] = getSum(m.values[i], m.nCols);
+        resultGetSum[i] = criteria(m.values[i], m.nCols);
     }
     for (int i = 1; i < m.nRows; i++) {
         int t = resultGetSum[i];
@@ -128,7 +128,7 @@ void insertionSortColsMatrixByColCriteria(matrix m,
         for (int j = 0; j < m.nRows; j++) {
             copyColumn[j] = m.values[j][i];
         }
-        resultGetSum[i] = getSum(copyColumn, m.nRows);
+        resultGetSum[i] = criteria(copyColumn, m.nRows);
     }
     for (int i = 1; i < m.nCols; i++) {
         int t = resultGetSum[i];

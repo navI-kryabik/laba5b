@@ -24,11 +24,28 @@ void exercise2(matrix m) {
     sortRowsByMinElement(m);
 }
 
+// Задание 3
+int getMin(int *a, int n) {
+    int min = a[0];
+    for (int i = 1; i < n; i++)
+        if (a[i] < min)
+            min = a[i];
+    return min;
+}
+
+void sortColsByMinElement(matrix m) {
+    insertionSortColsMatrixByColCriteria(m, getMin);
+}
+
+void exercise3(matrix m) {
+    sortColsByMinElement(m);
+}
+
 int main() {
 
-    matrix m = getMemMatrix(3, 3);
+    matrix m = getMemMatrix(3, 6);
     inputMatrix(m);
-    exercise2(m);
+    exercise3(m);
     outputMatrix(m);
 
     return 0;
