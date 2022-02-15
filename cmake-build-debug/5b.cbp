@@ -80,9 +80,6 @@
 		<Unit filename="F:/Programm/5b/libs/data_structures/matrix/matrix.h">
 			<Option target="5b"/>
 		</Unit>
-		<Unit filename="F:/Programm/5b/libs/data_structures/matrix/solution.c">
-			<Option target="5b"/>
-		</Unit>
 		<Unit filename="F:/Programm/5b/libs/data_structures/vector/vector.c">
 			<Option target="5b"/>
 		</Unit>

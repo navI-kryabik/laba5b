@@ -29,25 +29,25 @@ matrix *getMemArrayOfMatrices(int nMatrices,
 
 // освобождает память, выделенную под
 // хранение матрицы m.
-void freeMemMatrix(matrix m) {
-    for (int i = 0; i < m.nRows; i++)
-        free(m.values[i]);
-    free(m.values);
+void freeMemMatrix(matrix *m) {
+    for (int i = 0; i < m->nRows; i++)
+        free(m->values[i]);
+    free(m->values);
 }
 
 // освобождает память, выделенную под хранение
 // массива ms из nMatrices матриц.
 void freeMemMatrices(matrix *ms, int nMatrices) {
     for (int i = 0; i < nMatrices; i++)
-        freeMemMatrix(ms[i]);
+        freeMemMatrix(&ms[i]);
     free(ms);
 }
 
 // ввод матрицы m.
 void inputMatrix(matrix m) {
     for (int i = 0; i < m.nRows; i++)
-        for (int k = 0; k < m.nCols; i++)
-            scanf("%d", &m.values[i][k]);
+        for (int j = 0; j < m.nCols; j++)
+            scanf("%d", &m.values[i][j]);
 }
 
 //  ввод массива из
@@ -59,9 +59,11 @@ void inputMatrices(matrix *ms, int nMatrices) {
 
 // вывод матрицы m.
 void outputMatrix(matrix m) {
-    for (int i = 0; i < m.nRows; i++)
-        for (int k = 0; k < m.nCols; i++)
+    for (int i = 0; i < m.nRows; i++) {
+        for (int k = 0; k < m.nCols; k++)
             printf("%d ", m.values[i][k]);
+        printf("\n");
+    }
 }
 
 // вывод массива из
@@ -102,7 +104,7 @@ void insertionSortRowsMatrixByRowCriteria(matrix m,
 
     int resultGetSum[m.nRows];
     for (int i = 0; i < m.nRows; i++) {
-        resultGetSum[i] = criteria(m.values[i], m.nCols);
+        resultGetSum[i] = getSum(m.values[i], m.nCols);
     }
     for (int i = 1; i < m.nRows; i++) {
         int t = resultGetSum[i];
@@ -127,7 +129,7 @@ void insertionSortColsMatrixByColCriteria(matrix m,
         for (int j = 0; j < m.nRows; j++) {
             copyColumn[j] = m.values[j][i];
         }
-        resultGetSum[i] = criteria(copyColumn, m.nRows);
+        resultGetSum[i] = getSum(copyColumn, m.nRows);
     }
     for (int i = 1; i < m.nCols; i++) {
         int t = resultGetSum[i];
@@ -191,14 +193,13 @@ bool isSymmetricMatrix(matrix m) {
 
 // транспонирует квадратную матрицу m.
 void transposeSquareMatrix(matrix m) {
-    assert(isSquareMatrix(m));
     int position = 0;
-    for (int i = position; i < m.nRows; i++)
-        for (int j = position; j < m.nCols; j++) {
+    for (int i = position; i < m.nRows; i++) {
+        for (int j = position; j < m.nCols; j++)
             if (i != j)
                 swap(&m.values[i][j], &m.values[j][i]);
-            position++;
-        }
+        position++;
+    }
 }
 
 // возвращает позицию минимального элемента матрицы m.

@@ -6,17 +6,5 @@
 
 #IncludeRegexTransform: 
 
-F:/Programm/5b/libs/data_structures/vector/vector.h
-stdio.h
--
-stdbool.h
--
-
-F:/Programm/5b/main.c
-stdio.h
--
-libs/data_structures/vector/vector.h
-F:/Programm/5b/libs/data_structures/vector/vector.h
-assert.h
--
+F:/Programm/5b/libs/data_structures/matrix/matrix.c
 
