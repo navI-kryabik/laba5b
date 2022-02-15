@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "libs/data_structures/vector/vector.h"
 #include <assert.h>
+#include "libs/data_structures/matrix/matrix.h"
 
 bool isEqualVectors(vector *v1, vector *v2) {
     if (v1->size != v2->size) {
@@ -297,7 +298,7 @@ void test() {
 
 int main() {
 
-    test();
+
 
     return 0;
 }

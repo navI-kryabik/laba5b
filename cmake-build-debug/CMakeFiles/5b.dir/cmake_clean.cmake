@@ -2,6 +2,8 @@ file(REMOVE_RECURSE
   "5b.exe"
   "5b.exe.manifest"
   "5b.pdb"
+  "CMakeFiles/5b.dir/libs/data_structures/matrix/matrix.c.obj"
+  "CMakeFiles/5b.dir/libs/data_structures/matrix/solution.c.obj"
   "CMakeFiles/5b.dir/libs/data_structures/vector/vector.c.obj"
   "CMakeFiles/5b.dir/main.c.obj"
   "lib5b.dll.a"

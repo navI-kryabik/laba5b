@@ -128,6 +128,54 @@ depend:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\5b.dir\build.make CMakeFiles/5b.dir/build
 .PHONY : 5b/fast
 
+libs/data_structures/matrix/matrix.obj: libs/data_structures/matrix/matrix.c.obj
+.PHONY : libs/data_structures/matrix/matrix.obj
+
+# target to build an object file
+libs/data_structures/matrix/matrix.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\5b.dir\build.make CMakeFiles/5b.dir/libs/data_structures/matrix/matrix.c.obj
+.PHONY : libs/data_structures/matrix/matrix.c.obj
+
+libs/data_structures/matrix/matrix.i: libs/data_structures/matrix/matrix.c.i
+.PHONY : libs/data_structures/matrix/matrix.i
+
+# target to preprocess a source file
+libs/data_structures/matrix/matrix.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\5b.dir\build.make CMakeFiles/5b.dir/libs/data_structures/matrix/matrix.c.i
+.PHONY : libs/data_structures/matrix/matrix.c.i
+
+libs/data_structures/matrix/matrix.s: libs/data_structures/matrix/matrix.c.s
+.PHONY : libs/data_structures/matrix/matrix.s
+
+# target to generate assembly for a file
+libs/data_structures/matrix/matrix.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\5b.dir\build.make CMakeFiles/5b.dir/libs/data_structures/matrix/matrix.c.s
+.PHONY : libs/data_structures/matrix/matrix.c.s
+
+libs/data_structures/matrix/solution.obj: libs/data_structures/matrix/solution.c.obj
+.PHONY : libs/data_structures/matrix/solution.obj
+
+# target to build an object file
+libs/data_structures/matrix/solution.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\5b.dir\build.make CMakeFiles/5b.dir/libs/data_structures/matrix/solution.c.obj
+.PHONY : libs/data_structures/matrix/solution.c.obj
+
+libs/data_structures/matrix/solution.i: libs/data_structures/matrix/solution.c.i
+.PHONY : libs/data_structures/matrix/solution.i
+
+# target to preprocess a source file
+libs/data_structures/matrix/solution.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\5b.dir\build.make CMakeFiles/5b.dir/libs/data_structures/matrix/solution.c.i
+.PHONY : libs/data_structures/matrix/solution.c.i
+
+libs/data_structures/matrix/solution.s: libs/data_structures/matrix/solution.c.s
+.PHONY : libs/data_structures/matrix/solution.s
+
+# target to generate assembly for a file
+libs/data_structures/matrix/solution.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\5b.dir\build.make CMakeFiles/5b.dir/libs/data_structures/matrix/solution.c.s
+.PHONY : libs/data_structures/matrix/solution.c.s
+
 libs/data_structures/vector/vector.obj: libs/data_structures/vector/vector.c.obj
 .PHONY : libs/data_structures/vector/vector.obj
 
@@ -185,6 +233,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... 5b
+	@echo ... libs/data_structures/matrix/matrix.obj
+	@echo ... libs/data_structures/matrix/matrix.i
+	@echo ... libs/data_structures/matrix/matrix.s
+	@echo ... libs/data_structures/matrix/solution.obj
+	@echo ... libs/data_structures/matrix/solution.i
+	@echo ... libs/data_structures/matrix/solution.s
 	@echo ... libs/data_structures/vector/vector.obj
 	@echo ... libs/data_structures/vector/vector.i
 	@echo ... libs/data_structures/vector/vector.s
