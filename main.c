@@ -413,9 +413,38 @@ void exercise3(matrix m) {
     sortColsByMinElement(m);
 }
 
-int main() {
+// Задание 4
+matrix mulMatrices(matrix m1, matrix m2) {
+    if (m1.nCols != m2.nRows)
+        return m1;
+    matrix m3 = getMemMatrix(m1.nRows, m2.nCols);
+    for (int i = 0; i < m1.nRows; i++)
+        for (int j = 0; j < m2.nCols; j++) {
+            m3.values[i][j] = 0;
+            for (int k = 0; k < m1.nCols; k++) {
+                m3.values[i][j] += m1.values[i][k] * m2.values[k][j];
+            }
+        }
+    return m3;
+}
 
-    test();
+void getSquareOfMatrixIfSymmetric(matrix *m) {
+    if (isSymmetricMatrix(*m))
+        *m = mulMatrices(*m, *m);
+}
+
+
+int main() {
+    int nRows, nCols;
+    scanf("%d %d", &nRows, &nCols);
+
+    matrix m = getMemMatrix(nRows, nCols);
+
+    inputMatrix(m);
+
+    getSquareOfMatrixIfSymmetric(&m);
+
+    outputMatrix(m);
 
     return 0;
 }
