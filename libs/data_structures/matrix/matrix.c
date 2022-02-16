@@ -244,6 +244,8 @@ matrix createMatrixFromArray(const int *a, int nRows,
     return m;
 }
 
+// возвращает указатель на нулевую матрицу массива из nMatrices матриц,
+// размещенных в динамической памяти, построенных из элементов массива a:
 matrix *createArrayOfMatrixFromArray(const int *values,
                                      int nMatrices, int nRows, int nCols) {
 
