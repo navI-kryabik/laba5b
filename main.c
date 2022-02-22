@@ -433,16 +433,40 @@ void getSquareOfMatrixIfSymmetric(matrix *m) {
         *m = mulMatrices(*m, *m);
 }
 
+// Задание 5
+bool isUnique(int *a, int n) {
+    for (size_t i = 0; i < n - 1; i++) {
+        for (size_t j = i + 1; j < n; j++) {
+            if (a[i] == a[j])
+                return false;
+        }
+    }
+    return true;
+}
+
+long long getSum1(int *a, int n) {
+    long long sum = 0;
+    for (int i = 0; i < n; i++)
+        sum += a[i];
+    return sum;
+}
+
+void transposeIfMatrixHasNotEqualSumOfRows(matrix m) {
+    long long sumArray[m.nRows];
+    for (int i = 0; i < m.nRows; i++)
+        sumArray[i] = getSum1(m.values[i], m.nCols);
+    if (isUnique(sumArray, m.nRows))
+        transposeSquareMatrix(m);
+}
 
 int main() {
     int nRows, nCols;
     scanf("%d %d", &nRows, &nCols);
 
     matrix m = getMemMatrix(nRows, nCols);
-
     inputMatrix(m);
 
-    getSquareOfMatrixIfSymmetric(&m);
+    transposeIfMatrixHasNotEqualSumOfRows(m);
 
     outputMatrix(m);
 
