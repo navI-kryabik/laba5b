@@ -640,6 +640,37 @@ int countNonDescendingRowsMatrices(matrix *ms, int nMatrix) {
     return count;
 }
 
+// Задание 14
+int countValues(const int *a, int n, int value) {
+    int count = 0;
+    for (int i = 0; i < n; i++)
+        if (a[i] == value)
+            count++;
+    return count;
+}
+
+int countZeroRows(matrix m) {
+    int count = 0;
+    for (int i = 0; i < m.nRows; i++)
+        if (countValues(m.values[i], m.nCols, 0) == m.nCols)
+            count++;
+    return count;
+}
+
+void printMatrixWithMaxZeroRows(matrix *ms, int nMatrix) {
+    int countMatrixWithZeroRows[nMatrix];
+    int maxZeroRows = 0;
+    for (size_t i = 0; i < nMatrix; i++) {
+        int zeroRows = countZeroRows(ms[i]);
+        countMatrixWithZeroRows[i] = zeroRows;
+        if (zeroRows > maxZeroRows)
+            maxZeroRows = zeroRows;
+    }
+    for (size_t i = 0; i < nMatrix; i++)
+        if (countMatrixWithZeroRows[i] == maxZeroRows)
+            outputMatrix(ms[i]);
+}
+
 
 int main() {
 
