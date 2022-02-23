@@ -465,21 +465,28 @@ bool isMutuallyInverseMatrices(matrix m1, matrix m2) {
     return isEMatrix(m3) ? 1 : 0;
 }
 
+// Задание 8
+int getMinInArea(matrix m) {
+    int min;
+    position maxPosition = getMaxValuePos(m);
+    int leftLimit = maxPosition.colIndex;
+    int rightLimit = maxPosition.colIndex;
+    for (int i = maxPosition.rowIndex; i >= 0; i--) {
+        if (leftLimit != 0)
+            leftLimit--;
+        if (rightLimit != m.nCols - 1)
+            rightLimit++;
+        min = getMin(m.values[i], rightLimit - leftLimit);
+    }
+    return min;
+}
+
 
 int main() {
-    int nRows1, nCols1;
-    scanf("%d %d", &nRows1, &nCols1);
-
-    matrix m1 = getMemMatrix(nRows1, nCols1);
+    matrix m1 = getMemMatrix(5, 6);
     inputMatrix(m1);
 
-    int nRows2, nCols2;
-    scanf("%d %d", &nRows2, &nCols2);
-
-    matrix m2 = getMemMatrix(nRows2, nCols2);
-    inputMatrix(m2);
-
-    printf("%d", isMutuallyInverseMatrices(m1, m2));
+    printf("%d", getMinInArea(m1));
 
     return 0;
 }
