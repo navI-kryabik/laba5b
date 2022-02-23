@@ -589,6 +589,39 @@ int getNSpecialElement(matrix m) {
     return count;
 }
 
+// Задание 12
+position getLeftMin(matrix m) {
+    position MinPos = {0, 0};
+    int Min = m.values[0][0];
+    for (int i = 0; i < m.nCols; i++) {
+        for (int j = 0; j < m.nRows; j++) {
+            if (m.values[j][i] < Min) {
+                Min = m.values[j][i];
+                MinPos.rowIndex = j;
+                MinPos.colIndex = i;
+            }
+        }
+    }
+    return MinPos;
+}
+
+
+void swapPenultimateRow(matrix m) {
+    position minElemPos = getLeftMin(m);
+
+    int minColElems[m.nRows];
+    for (int i = 0; i < m.nRows; i++)
+        minColElems[i] = m.values[i][minElemPos.colIndex];
+
+    for (int i = 0; i < m.nRows; i++)
+        m.values[m.nRows - 2][i] = minColElems[i];
+
+}
+
+// Задание 13
+
+
+
 int main() {
 
 
