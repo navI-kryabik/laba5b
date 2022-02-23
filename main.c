@@ -467,6 +467,30 @@ bool isMutuallyInverseMatrices(matrix m1, matrix m2) {
 }
 
 // Задание 7
+int max(int a, int b) {
+    return a > b ? a : b;
+}
+
+long long findSumOfMaxesOfPseudoDiagonal(matrix m) {
+    if (m.nRows == 1 && m.nCols == 1)
+        return 0;
+    int n = m.nRows + m.nCols - 2;
+    int maximaOnLine[n];
+    for (size_t i = 0; i < n; i++)
+        maximaOnLine[i] = 0;
+    int indexDiagonalElement;
+    for (int i = 0; i < m.nRows; i++)
+        for (int j = 0; j < m.nCols; j++)
+            if (j != i) {
+                if (i > j)
+                    indexDiagonalElement = j - i + m.nRows - 1;
+                else
+                    indexDiagonalElement = j - i + m.nRows - 2;
+                maximaOnLine[indexDiagonalElement] = max(maximaOnLine[indexDiagonalElement],
+                                                         m.values[i][j]);
+            }
+    return getSum(maximaOnLine, n);
+}
 
 // Задание 8
 int getMinInArea(matrix m) {
