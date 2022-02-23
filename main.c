@@ -1,6 +1,7 @@
 #include "libs/data_structures/matrix/matrix.h"
 #include <assert.h>
 #include <math.h>
+#include <float.h>
 
 void qsort(long long int *pInt, int n, size_t i, int (*aLong)(const void *, const void *));
 
@@ -669,6 +670,35 @@ void printMatrixWithMaxZeroRows(matrix *ms, int nMatrix) {
     for (size_t i = 0; i < nMatrix; i++)
         if (countMatrixWithZeroRows[i] == maxZeroRows)
             outputMatrix(ms[i]);
+}
+
+// Задание 15
+double getMaximumRate(matrixf m) {
+    double maxRate = fabs(m.values[0][0]);
+    for (size_t i = 0; i < m.nRows; i++) {
+        for (size_t j = 0; j < m.nCols; j++) {
+            double potentialMaxRate = fabs(m.values[i][j]);
+            if (potentialMaxRate > maxRate)
+                maxRate = potentialMaxRate;
+        }
+    }
+    return maxRate;
+}
+
+void printMatrixWithMaxRate(matrixf *ms, int nMatrix) {
+    double minRate = getMaximumRate(ms[0]);
+    double maxRatesMatrix[nMatrix];
+    maxRatesMatrix[0] = minRate;
+    for (size_t i = 1; i < nMatrix; i++) {
+        double maxRate = getMaximumRate(ms[i]);
+        maxRatesMatrix[i] = maxRate;
+        if (maxRate < minRate)
+            minRate = maxRate;
+    }
+    for (size_t i = 0; i < nMatrix; i++) {
+        if (fabs(maxRatesMatrix[i] - minRate) < DBL_EPSILON)
+            outputMatrixf(ms[i]);
+    }
 }
 
 

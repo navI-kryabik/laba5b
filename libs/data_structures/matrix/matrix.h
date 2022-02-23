@@ -63,4 +63,21 @@ matrix createMatrixFromArray(const int *a, int nRows,
 matrix *createArrayOfMatrixFromArray(const int *values,
                                      int nMatrices, int nRows, int nCols);
 
+typedef struct matrixf {
+    double **values; // элементы матрицы
+    double nRows; // количество рядов
+    double nCols; // количество столбцов
+} matrixf;
+
+matrixf getMemMatrixf(int nRows, int nCols);
+
+matrixf *getMemArrayOfMatricesf(int nMatrices, int nRows, int nCols);
+
+void inputMatrixf(matrixf m);
+
+void inputMatricesf(matrixf *ms, int nMatrices);
+
+void outputMatrixf(matrixf m);
+
+
 #endif

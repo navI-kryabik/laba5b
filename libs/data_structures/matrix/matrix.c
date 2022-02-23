@@ -259,3 +259,36 @@ matrix *createArrayOfMatrixFromArray(const int *values,
 
     return ms;
 }
+
+matrixf getMemMatrixf(int nRows, int nCols) {
+    double **values = (double **) malloc(sizeof(double *) * nRows);
+    for (int i = 0; i < nRows; i++)
+        values[i] = (double *) malloc(sizeof(double) * nCols);
+    return (matrixf) {values, nRows, nCols};
+}
+
+matrixf *getMemArrayOfMatricesf(int nMatrices, int nRows, int nCols) {
+    matrixf *ms = (matrixf *) malloc(sizeof(matrixf) * nMatrices);
+    for (int i = 0; i < nMatrices; i++)
+        ms[i] = getMemMatrixf(nRows, nCols);
+    return ms;
+}
+
+void inputMatrixf(matrixf m) {
+    for (int i = 0; i < m.nRows; i++)
+        for (int j = 0; j < m.nCols; j++)
+            scanf("%lf", &m.values[i][j]);
+}
+
+void inputMatricesf(matrixf *ms, int nMatrices) {
+    for (int i = 0; i < nMatrices; i++)
+        inputMatrixf(ms[i]);
+}
+
+void outputMatrixf(matrixf m) {
+    for (int i = 0; i < m.nRows; i++) {
+        for (int j = 0; j < m.nCols; j++)
+            printf("%lf ", m.values[i][j]);
+        printf("\n");
+    }
+}
