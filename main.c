@@ -1,5 +1,6 @@
 #include "libs/data_structures/matrix/matrix.h"
 #include <assert.h>
+#include <math.h>
 
 void test_getMemMatrix_zero() {
     matrix m = getMemMatrix(0, 0);
@@ -465,6 +466,8 @@ bool isMutuallyInverseMatrices(matrix m1, matrix m2) {
     return isEMatrix(m3) ? 1 : 0;
 }
 
+// Задание 7
+
 // Задание 8
 int getMinInArea(matrix m) {
     int min;
@@ -481,12 +484,36 @@ int getMinInArea(matrix m) {
     return min;
 }
 
+// Задание 9
+float getDistance(int *a, int n) {
+    double distance = 0;
+    for (size_t i = 0; i < n; i++)
+        distance += pow(a[i], 2);
+    return sqrt(distance);
+}
+
+void insertionSortRowsMatrixByRowCriteriaF(matrix m, float (*criteria)(int *, int)) {
+    float criteriaArray[m.nRows];
+    for (size_t i = 0; i < m.nRows; i++)
+        criteriaArray[i] = criteria(m.values[i], m.nCols);
+    for (int i = 1; i < m.nRows; i++) {
+        float k = criteriaArray[i];
+        int j = i;
+        while (j > 0 && criteriaArray[j - 1] > k) {
+            criteriaArray[j] = criteriaArray[j - 1];
+            swapRows(m, j, j - 1);
+            j--;
+        }
+        criteriaArray[j] = k;
+    }
+}
+
+void sortByDistances(matrix m) {
+    insertionSortRowsMatrixByRowCriteriaF(m, getDistance);
+}
 
 int main() {
-    matrix m1 = getMemMatrix(5, 6);
-    inputMatrix(m1);
 
-    printf("%d", getMinInArea(m1));
 
     return 0;
 }
