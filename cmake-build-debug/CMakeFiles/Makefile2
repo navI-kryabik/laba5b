@@ -63,6 +63,7 @@ CMAKE_BINARY_DIR = F:\Programm\5b\cmake-build-debug
 
 # The main recursive "all" target.
 all: CMakeFiles/5b.dir/all
+all: CMakeFiles/str.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,21 +72,22 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/5b.dir/clean
+clean: CMakeFiles/str.dir/clean
 .PHONY : clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/5b.dir
 
 # All Build rule for target.
-CMakeFiles/5b.dir/all:
+CMakeFiles/5b.dir/all: CMakeFiles/str.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\5b.dir\build.make CMakeFiles/5b.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\5b.dir\build.make CMakeFiles/5b.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=F:\Programm\5b\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4 "Built target 5b"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=F:\Programm\5b\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5 "Built target 5b"
 .PHONY : CMakeFiles/5b.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/5b.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start F:\Programm\5b\cmake-build-debug\CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start F:\Programm\5b\cmake-build-debug\CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/5b.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start F:\Programm\5b\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/5b.dir/rule
@@ -98,6 +100,32 @@ CMakeFiles/5b.dir/rule: cmake_check_build_system
 CMakeFiles/5b.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\5b.dir\build.make CMakeFiles/5b.dir/clean
 .PHONY : CMakeFiles/5b.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/str.dir
+
+# All Build rule for target.
+CMakeFiles/str.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=F:\Programm\5b\cmake-build-debug\CMakeFiles --progress-num=6,7 "Built target str"
+.PHONY : CMakeFiles/str.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/str.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start F:\Programm\5b\cmake-build-debug\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/str.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start F:\Programm\5b\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/str.dir/rule
+
+# Convenience name for target.
+str: CMakeFiles/str.dir/rule
+.PHONY : str
+
+# clean rule for target.
+CMakeFiles/str.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/clean
+.PHONY : CMakeFiles/str.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

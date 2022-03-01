@@ -1,3 +1,4 @@
 F:/Programm/5b/cmake-build-debug/CMakeFiles/5b.dir
 F:/Programm/5b/cmake-build-debug/CMakeFiles/edit_cache.dir
+F:/Programm/5b/cmake-build-debug/CMakeFiles/str.dir
 F:/Programm/5b/cmake-build-debug/CMakeFiles/rebuild_cache.dir

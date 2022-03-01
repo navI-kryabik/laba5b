@@ -1,0 +1,2 @@
+F:\MinGw\mingw64\bin\ar.exe qc libstr.a CMakeFiles/str.dir/string/tasks/string_.c.obj
+F:\MinGw\mingw64\bin\ranlib.exe libstr.a

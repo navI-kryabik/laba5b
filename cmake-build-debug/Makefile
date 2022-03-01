@@ -128,6 +128,19 @@ depend:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\5b.dir\build.make CMakeFiles/5b.dir/build
 .PHONY : 5b/fast
 
+#=============================================================================
+# Target rules for targets named str
+
+# Build rule for target.
+str: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 str
+.PHONY : str
+
+# fast build rule for target.
+str/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/build
+.PHONY : str/fast
+
 libs/data_structures/matrix/matrix.obj: libs/data_structures/matrix/matrix.c.obj
 .PHONY : libs/data_structures/matrix/matrix.obj
 
@@ -200,6 +213,33 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\5b.dir\build.make CMakeFiles/5b.dir/main.c.s
 .PHONY : main.c.s
 
+string/tasks/string_.obj: string/tasks/string_.c.obj
+.PHONY : string/tasks/string_.obj
+
+# target to build an object file
+string/tasks/string_.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\5b.dir\build.make CMakeFiles/5b.dir/string/tasks/string_.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/string/tasks/string_.c.obj
+.PHONY : string/tasks/string_.c.obj
+
+string/tasks/string_.i: string/tasks/string_.c.i
+.PHONY : string/tasks/string_.i
+
+# target to preprocess a source file
+string/tasks/string_.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\5b.dir\build.make CMakeFiles/5b.dir/string/tasks/string_.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/string/tasks/string_.c.i
+.PHONY : string/tasks/string_.c.i
+
+string/tasks/string_.s: string/tasks/string_.c.s
+.PHONY : string/tasks/string_.s
+
+# target to generate assembly for a file
+string/tasks/string_.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\5b.dir\build.make CMakeFiles/5b.dir/string/tasks/string_.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/string/tasks/string_.c.s
+.PHONY : string/tasks/string_.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -209,6 +249,7 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... 5b
+	@echo ... str
 	@echo ... libs/data_structures/matrix/matrix.obj
 	@echo ... libs/data_structures/matrix/matrix.i
 	@echo ... libs/data_structures/matrix/matrix.s
@@ -218,6 +259,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... string/tasks/string_.obj
+	@echo ... string/tasks/string_.i
+	@echo ... string/tasks/string_.s
 .PHONY : help
 
 

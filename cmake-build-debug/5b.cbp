@@ -63,6 +63,42 @@
 					<DistClean command="F:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;F:/Programm/5b/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="str">
+				<Option output="F:/Programm/5b/cmake-build-debug/libstr.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="F:/Programm/5b/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="F:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="F:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="F:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="F:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;F:/Programm/5b/cmake-build-debug/Makefile&quot;  VERBOSE=1 str"/>
+					<CompileFile command="F:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;F:/Programm/5b/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="F:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;F:/Programm/5b/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="F:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;F:/Programm/5b/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="str/fast">
+				<Option output="F:/Programm/5b/cmake-build-debug/libstr.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="F:/Programm/5b/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="F:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="F:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="F:/MinGw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="F:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;F:/Programm/5b/cmake-build-debug/Makefile&quot;  VERBOSE=1 str/fast"/>
+					<CompileFile command="F:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;F:/Programm/5b/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="F:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;F:/Programm/5b/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="F:/MinGw/mingw64/bin/mingw32-make.exe -f &quot;F:/Programm/5b/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="rebuild_cache">
 				<Option working_dir="F:/Programm/5b/cmake-build-debug"/>
 				<Option type="4"/>
@@ -88,6 +124,14 @@
 		</Unit>
 		<Unit filename="F:/Programm/5b/main.c">
 			<Option target="5b"/>
+		</Unit>
+		<Unit filename="F:/Programm/5b/string/tasks/string_.c">
+			<Option target="5b"/>
+			<Option target="str"/>
+		</Unit>
+		<Unit filename="F:/Programm/5b/string/tasks/string_.h">
+			<Option target="5b"/>
+			<Option target="str"/>
 		</Unit>
 		<Unit filename="F:/Programm/5b/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

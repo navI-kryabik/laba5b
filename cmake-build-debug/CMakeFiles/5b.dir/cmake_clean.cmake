@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/5b.dir/libs/data_structures/matrix/matrix.c.obj"
   "CMakeFiles/5b.dir/libs/data_structures/vector/vector.c.obj"
   "CMakeFiles/5b.dir/main.c.obj"
+  "CMakeFiles/5b.dir/string/tasks/string_.c.obj"
   "lib5b.dll.a"
 )
 
