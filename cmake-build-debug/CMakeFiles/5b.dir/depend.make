@@ -8,5 +8,8 @@ CMakeFiles/5b.dir/libs/data_structures/vector/vector.c.obj: \
  ../libs/data_structures/vector/vector.c \
  ../libs/data_structures/vector/vector.h
 CMakeFiles/5b.dir/main.c.obj: \
- ../libs/data_structures/matrix/matrix.h \
- ../main.c
+ ../main.c \
+ ../string/tasks/string_.h
+CMakeFiles/5b.dir/string/tasks/string_.c.obj: \
+ ../string/tasks/string_.c \
+ ../string/tasks/string_.h

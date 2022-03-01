@@ -6,11 +6,9 @@
 
 #IncludeRegexTransform: 
 
-F:/Programm/5b/main.c
-string/tasks/string_.h
+F:/Programm/5b/string/tasks/string_.c
+string_.h
 F:/Programm/5b/string/tasks/string_.h
-assert.h
--
 
 F:/Programm/5b/string/tasks/string_.h
 stdio.h
