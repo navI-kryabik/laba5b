@@ -213,32 +213,59 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\5b.dir\build.make CMakeFiles/5b.dir/main.c.s
 .PHONY : main.c.s
 
-string/tasks/string_.obj: string/tasks/string_.c.obj
-.PHONY : string/tasks/string_.obj
+string/string_.obj: string/string_.c.obj
+.PHONY : string/string_.obj
 
 # target to build an object file
-string/tasks/string_.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\5b.dir\build.make CMakeFiles/5b.dir/string/tasks/string_.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/string/tasks/string_.c.obj
-.PHONY : string/tasks/string_.c.obj
+string/string_.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\5b.dir\build.make CMakeFiles/5b.dir/string/string_.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/string/string_.c.obj
+.PHONY : string/string_.c.obj
 
-string/tasks/string_.i: string/tasks/string_.c.i
-.PHONY : string/tasks/string_.i
+string/string_.i: string/string_.c.i
+.PHONY : string/string_.i
 
 # target to preprocess a source file
-string/tasks/string_.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\5b.dir\build.make CMakeFiles/5b.dir/string/tasks/string_.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/string/tasks/string_.c.i
-.PHONY : string/tasks/string_.c.i
+string/string_.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\5b.dir\build.make CMakeFiles/5b.dir/string/string_.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/string/string_.c.i
+.PHONY : string/string_.c.i
 
-string/tasks/string_.s: string/tasks/string_.c.s
-.PHONY : string/tasks/string_.s
+string/string_.s: string/string_.c.s
+.PHONY : string/string_.s
 
 # target to generate assembly for a file
-string/tasks/string_.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\5b.dir\build.make CMakeFiles/5b.dir/string/tasks/string_.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/string/tasks/string_.c.s
-.PHONY : string/tasks/string_.c.s
+string/string_.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\5b.dir\build.make CMakeFiles/5b.dir/string/string_.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/string/string_.c.s
+.PHONY : string/string_.c.s
+
+string/tasks/removeNonLetters.obj: string/tasks/removeNonLetters.c.obj
+.PHONY : string/tasks/removeNonLetters.obj
+
+# target to build an object file
+string/tasks/removeNonLetters.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\5b.dir\build.make CMakeFiles/5b.dir/string/tasks/removeNonLetters.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/string/tasks/removeNonLetters.c.obj
+.PHONY : string/tasks/removeNonLetters.c.obj
+
+string/tasks/removeNonLetters.i: string/tasks/removeNonLetters.c.i
+.PHONY : string/tasks/removeNonLetters.i
+
+# target to preprocess a source file
+string/tasks/removeNonLetters.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\5b.dir\build.make CMakeFiles/5b.dir/string/tasks/removeNonLetters.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/string/tasks/removeNonLetters.c.i
+.PHONY : string/tasks/removeNonLetters.c.i
+
+string/tasks/removeNonLetters.s: string/tasks/removeNonLetters.c.s
+.PHONY : string/tasks/removeNonLetters.s
+
+# target to generate assembly for a file
+string/tasks/removeNonLetters.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\5b.dir\build.make CMakeFiles/5b.dir/string/tasks/removeNonLetters.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/string/tasks/removeNonLetters.c.s
+.PHONY : string/tasks/removeNonLetters.c.s
 
 # Help Target
 help:
@@ -259,9 +286,12 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
-	@echo ... string/tasks/string_.obj
-	@echo ... string/tasks/string_.i
-	@echo ... string/tasks/string_.s
+	@echo ... string/string_.obj
+	@echo ... string/string_.i
+	@echo ... string/string_.s
+	@echo ... string/tasks/removeNonLetters.obj
+	@echo ... string/tasks/removeNonLetters.i
+	@echo ... string/tasks/removeNonLetters.s
 .PHONY : help
 
 

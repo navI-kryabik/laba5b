@@ -125,11 +125,19 @@
 		<Unit filename="F:/Programm/5b/main.c">
 			<Option target="5b"/>
 		</Unit>
-		<Unit filename="F:/Programm/5b/string/tasks/string_.c">
+		<Unit filename="F:/Programm/5b/string/string_.c">
 			<Option target="5b"/>
 			<Option target="str"/>
 		</Unit>
-		<Unit filename="F:/Programm/5b/string/tasks/string_.h">
+		<Unit filename="F:/Programm/5b/string/string_.h">
+			<Option target="5b"/>
+			<Option target="str"/>
+		</Unit>
+		<Unit filename="F:/Programm/5b/string/tasks/removeNonLetters.c">
+			<Option target="5b"/>
+			<Option target="str"/>
+		</Unit>
+		<Unit filename="F:/Programm/5b/string/tasks/removeNonLetters.h">
 			<Option target="5b"/>
 			<Option target="str"/>
 		</Unit>

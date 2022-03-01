@@ -8,7 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "F:/Programm/5b/string/tasks/string_.c" "F:/Programm/5b/cmake-build-debug/CMakeFiles/str.dir/string/tasks/string_.c.obj"
+  "F:/Programm/5b/string/string_.c" "F:/Programm/5b/cmake-build-debug/CMakeFiles/str.dir/string/string_.c.obj"
+  "F:/Programm/5b/string/tasks/removeNonLetters.c" "F:/Programm/5b/cmake-build-debug/CMakeFiles/str.dir/string/tasks/removeNonLetters.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

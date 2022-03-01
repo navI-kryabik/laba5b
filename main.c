@@ -1,4 +1,4 @@
-#include "string/tasks/string_.h"
+#include "string/string_.h"
 #include <assert.h>
 
 void test_findNonSpace() {
