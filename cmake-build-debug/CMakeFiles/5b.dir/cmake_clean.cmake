@@ -6,7 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/5b.dir/libs/data_structures/vector/vector.c.obj"
   "CMakeFiles/5b.dir/main.c.obj"
   "CMakeFiles/5b.dir/string/string_.c.obj"
-  "CMakeFiles/5b.dir/string/tasks/removeNonLetters.c.obj"
+  "CMakeFiles/5b.dir/string/tasks/replacingNumbersWithSpaces.c.obj"
   "lib5b.dll.a"
 )
 

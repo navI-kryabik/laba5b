@@ -117,18 +117,18 @@ CMakeFiles/5b.dir/string/string_.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/5b.dir/string/string_.c.s"
 	F:\MinGw\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S F:\Programm\5b\string\string_.c -o CMakeFiles\5b.dir\string\string_.c.s
 
-CMakeFiles/5b.dir/string/tasks/removeNonLetters.c.obj: CMakeFiles/5b.dir/flags.make
-CMakeFiles/5b.dir/string/tasks/removeNonLetters.c.obj: ../string/tasks/removeNonLetters.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:\Programm\5b\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/5b.dir/string/tasks/removeNonLetters.c.obj"
-	F:\MinGw\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\5b.dir\string\tasks\removeNonLetters.c.obj -c F:\Programm\5b\string\tasks\removeNonLetters.c
+CMakeFiles/5b.dir/string/tasks/replacingNumbersWithSpaces.c.obj: CMakeFiles/5b.dir/flags.make
+CMakeFiles/5b.dir/string/tasks/replacingNumbersWithSpaces.c.obj: ../string/tasks/replacingNumbersWithSpaces.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:\Programm\5b\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/5b.dir/string/tasks/replacingNumbersWithSpaces.c.obj"
+	F:\MinGw\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\5b.dir\string\tasks\replacingNumbersWithSpaces.c.obj -c F:\Programm\5b\string\tasks\replacingNumbersWithSpaces.c
 
-CMakeFiles/5b.dir/string/tasks/removeNonLetters.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/5b.dir/string/tasks/removeNonLetters.c.i"
-	F:\MinGw\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E F:\Programm\5b\string\tasks\removeNonLetters.c > CMakeFiles\5b.dir\string\tasks\removeNonLetters.c.i
+CMakeFiles/5b.dir/string/tasks/replacingNumbersWithSpaces.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/5b.dir/string/tasks/replacingNumbersWithSpaces.c.i"
+	F:\MinGw\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E F:\Programm\5b\string\tasks\replacingNumbersWithSpaces.c > CMakeFiles\5b.dir\string\tasks\replacingNumbersWithSpaces.c.i
 
-CMakeFiles/5b.dir/string/tasks/removeNonLetters.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/5b.dir/string/tasks/removeNonLetters.c.s"
-	F:\MinGw\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S F:\Programm\5b\string\tasks\removeNonLetters.c -o CMakeFiles\5b.dir\string\tasks\removeNonLetters.c.s
+CMakeFiles/5b.dir/string/tasks/replacingNumbersWithSpaces.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/5b.dir/string/tasks/replacingNumbersWithSpaces.c.s"
+	F:\MinGw\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S F:\Programm\5b\string\tasks\replacingNumbersWithSpaces.c -o CMakeFiles\5b.dir\string\tasks\replacingNumbersWithSpaces.c.s
 
 # Object files for target 5b
 5b_OBJECTS = \
@@ -136,7 +136,7 @@ CMakeFiles/5b.dir/string/tasks/removeNonLetters.c.s: cmake_force
 "CMakeFiles/5b.dir/libs/data_structures/vector/vector.c.obj" \
 "CMakeFiles/5b.dir/libs/data_structures/matrix/matrix.c.obj" \
 "CMakeFiles/5b.dir/string/string_.c.obj" \
-"CMakeFiles/5b.dir/string/tasks/removeNonLetters.c.obj"
+"CMakeFiles/5b.dir/string/tasks/replacingNumbersWithSpaces.c.obj"
 
 # External object files for target 5b
 5b_EXTERNAL_OBJECTS =
@@ -145,7 +145,7 @@ CMakeFiles/5b.dir/string/tasks/removeNonLetters.c.s: cmake_force
 5b.exe: CMakeFiles/5b.dir/libs/data_structures/vector/vector.c.obj
 5b.exe: CMakeFiles/5b.dir/libs/data_structures/matrix/matrix.c.obj
 5b.exe: CMakeFiles/5b.dir/string/string_.c.obj
-5b.exe: CMakeFiles/5b.dir/string/tasks/removeNonLetters.c.obj
+5b.exe: CMakeFiles/5b.dir/string/tasks/replacingNumbersWithSpaces.c.obj
 5b.exe: CMakeFiles/5b.dir/build.make
 5b.exe: libstr.a
 5b.exe: CMakeFiles/5b.dir/linklibs.rsp

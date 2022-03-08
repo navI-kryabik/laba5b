@@ -240,32 +240,29 @@ string/string_.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/string/string_.c.s
 .PHONY : string/string_.c.s
 
-string/tasks/removeNonLetters.obj: string/tasks/removeNonLetters.c.obj
-.PHONY : string/tasks/removeNonLetters.obj
+string/tasks/replacingNumbersWithSpaces.obj: string/tasks/replacingNumbersWithSpaces.c.obj
+.PHONY : string/tasks/replacingNumbersWithSpaces.obj
 
 # target to build an object file
-string/tasks/removeNonLetters.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\5b.dir\build.make CMakeFiles/5b.dir/string/tasks/removeNonLetters.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/string/tasks/removeNonLetters.c.obj
-.PHONY : string/tasks/removeNonLetters.c.obj
+string/tasks/replacingNumbersWithSpaces.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\5b.dir\build.make CMakeFiles/5b.dir/string/tasks/replacingNumbersWithSpaces.c.obj
+.PHONY : string/tasks/replacingNumbersWithSpaces.c.obj
 
-string/tasks/removeNonLetters.i: string/tasks/removeNonLetters.c.i
-.PHONY : string/tasks/removeNonLetters.i
+string/tasks/replacingNumbersWithSpaces.i: string/tasks/replacingNumbersWithSpaces.c.i
+.PHONY : string/tasks/replacingNumbersWithSpaces.i
 
 # target to preprocess a source file
-string/tasks/removeNonLetters.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\5b.dir\build.make CMakeFiles/5b.dir/string/tasks/removeNonLetters.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/string/tasks/removeNonLetters.c.i
-.PHONY : string/tasks/removeNonLetters.c.i
+string/tasks/replacingNumbersWithSpaces.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\5b.dir\build.make CMakeFiles/5b.dir/string/tasks/replacingNumbersWithSpaces.c.i
+.PHONY : string/tasks/replacingNumbersWithSpaces.c.i
 
-string/tasks/removeNonLetters.s: string/tasks/removeNonLetters.c.s
-.PHONY : string/tasks/removeNonLetters.s
+string/tasks/replacingNumbersWithSpaces.s: string/tasks/replacingNumbersWithSpaces.c.s
+.PHONY : string/tasks/replacingNumbersWithSpaces.s
 
 # target to generate assembly for a file
-string/tasks/removeNonLetters.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\5b.dir\build.make CMakeFiles/5b.dir/string/tasks/removeNonLetters.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/string/tasks/removeNonLetters.c.s
-.PHONY : string/tasks/removeNonLetters.c.s
+string/tasks/replacingNumbersWithSpaces.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\5b.dir\build.make CMakeFiles/5b.dir/string/tasks/replacingNumbersWithSpaces.c.s
+.PHONY : string/tasks/replacingNumbersWithSpaces.c.s
 
 # Help Target
 help:
@@ -289,9 +286,9 @@ help:
 	@echo ... string/string_.obj
 	@echo ... string/string_.i
 	@echo ... string/string_.s
-	@echo ... string/tasks/removeNonLetters.obj
-	@echo ... string/tasks/removeNonLetters.i
-	@echo ... string/tasks/removeNonLetters.s
+	@echo ... string/tasks/replacingNumbersWithSpaces.obj
+	@echo ... string/tasks/replacingNumbersWithSpaces.i
+	@echo ... string/tasks/replacingNumbersWithSpaces.s
 .PHONY : help
 
 
