@@ -240,32 +240,32 @@ string/string_.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/string/string_.c.s
 .PHONY : string/string_.c.s
 
-string/tasks/haveTheSameWords.obj: string/tasks/haveTheSameWords.c.obj
-.PHONY : string/tasks/haveTheSameWords.obj
+string/tasks/startReversedNumbersEndLetters.obj: string/tasks/startReversedNumbersEndLetters.c.obj
+.PHONY : string/tasks/startReversedNumbersEndLetters.obj
 
 # target to build an object file
-string/tasks/haveTheSameWords.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\5b.dir\build.make CMakeFiles/5b.dir/string/tasks/haveTheSameWords.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/string/tasks/haveTheSameWords.c.obj
-.PHONY : string/tasks/haveTheSameWords.c.obj
+string/tasks/startReversedNumbersEndLetters.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\5b.dir\build.make CMakeFiles/5b.dir/string/tasks/startReversedNumbersEndLetters.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/string/tasks/startReversedNumbersEndLetters.c.obj
+.PHONY : string/tasks/startReversedNumbersEndLetters.c.obj
 
-string/tasks/haveTheSameWords.i: string/tasks/haveTheSameWords.c.i
-.PHONY : string/tasks/haveTheSameWords.i
+string/tasks/startReversedNumbersEndLetters.i: string/tasks/startReversedNumbersEndLetters.c.i
+.PHONY : string/tasks/startReversedNumbersEndLetters.i
 
 # target to preprocess a source file
-string/tasks/haveTheSameWords.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\5b.dir\build.make CMakeFiles/5b.dir/string/tasks/haveTheSameWords.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/string/tasks/haveTheSameWords.c.i
-.PHONY : string/tasks/haveTheSameWords.c.i
+string/tasks/startReversedNumbersEndLetters.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\5b.dir\build.make CMakeFiles/5b.dir/string/tasks/startReversedNumbersEndLetters.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/string/tasks/startReversedNumbersEndLetters.c.i
+.PHONY : string/tasks/startReversedNumbersEndLetters.c.i
 
-string/tasks/haveTheSameWords.s: string/tasks/haveTheSameWords.c.s
-.PHONY : string/tasks/haveTheSameWords.s
+string/tasks/startReversedNumbersEndLetters.s: string/tasks/startReversedNumbersEndLetters.c.s
+.PHONY : string/tasks/startReversedNumbersEndLetters.s
 
 # target to generate assembly for a file
-string/tasks/haveTheSameWords.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\5b.dir\build.make CMakeFiles/5b.dir/string/tasks/haveTheSameWords.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/string/tasks/haveTheSameWords.c.s
-.PHONY : string/tasks/haveTheSameWords.c.s
+string/tasks/startReversedNumbersEndLetters.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\5b.dir\build.make CMakeFiles/5b.dir/string/tasks/startReversedNumbersEndLetters.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/string/tasks/startReversedNumbersEndLetters.c.s
+.PHONY : string/tasks/startReversedNumbersEndLetters.c.s
 
 # Help Target
 help:
@@ -289,9 +289,9 @@ help:
 	@echo ... string/string_.obj
 	@echo ... string/string_.i
 	@echo ... string/string_.s
-	@echo ... string/tasks/haveTheSameWords.obj
-	@echo ... string/tasks/haveTheSameWords.i
-	@echo ... string/tasks/haveTheSameWords.s
+	@echo ... string/tasks/startReversedNumbersEndLetters.obj
+	@echo ... string/tasks/startReversedNumbersEndLetters.i
+	@echo ... string/tasks/startReversedNumbersEndLetters.s
 .PHONY : help
 
 

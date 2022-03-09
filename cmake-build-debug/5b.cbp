@@ -133,10 +133,6 @@
 			<Option target="5b"/>
 			<Option target="str"/>
 		</Unit>
-		<Unit filename="F:/Programm/5b/string/tasks/haveTheSameWords.c">
-			<Option target="5b"/>
-			<Option target="str"/>
-		</Unit>
 		<Unit filename="F:/Programm/5b/string/tasks/haveTheSameWords.h">
 			<Option target="5b"/>
 			<Option target="str"/>
@@ -155,6 +151,14 @@
 		</Unit>
 		<Unit filename="F:/Programm/5b/string/tasks/replacingNumbersWithSpaces.h">
 			<Option target="5b"/>
+		</Unit>
+		<Unit filename="F:/Programm/5b/string/tasks/startReversedNumbersEndLetters.c">
+			<Option target="5b"/>
+			<Option target="str"/>
+		</Unit>
+		<Unit filename="F:/Programm/5b/string/tasks/startReversedNumbersEndLetters.h">
+			<Option target="5b"/>
+			<Option target="str"/>
 		</Unit>
 		<Unit filename="F:/Programm/5b/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
