@@ -90,3 +90,24 @@ void assertString(const char *expected, char *got,
     } else
         fprintf(stderr, "%s - OK\n", funcName);
 }
+
+bool getWord(char *beginSearch, WordDescriptor *word) {
+    word->begin = findNonSpace(beginSearch);
+    if (*word->begin == '\0')
+        return false;
+
+    word->end = findSpace(word->begin);
+
+    return true;
+}
+
+void getBagOfWords(BagOfWords *bag, char *s) {
+    bag->size = 0;
+    WordDescriptor w;
+    char *beginSearch = s;
+    while (getWord(beginSearch, &w)) {
+        bag->words[bag->size++] = w;
+
+        beginSearch = w.end;
+    }
+}
