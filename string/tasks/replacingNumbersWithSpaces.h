@@ -21,4 +21,35 @@ void replacingNumbersWithSpaces(char *s) {
     *s = '\0';
 }
 
+void test_eachDigitWithItsCorrespondingNumberGaps_emptyString() {
+    char s[MAX_STRING_SIZE] = "";
+    eachDigitWithItsCorrespondingNumberGaps(s);
+    ASSERT_STRING("", s);
+}
+
+void test_eachDigitWithItsCorrespondingNumberGaps_lettersAndNumbers() {
+    char s[MAX_STRING_SIZE] = "1SER2G";
+    eachDigitWithItsCorrespondingNumberGaps(s);
+    ASSERT_STRING(" SER  G", s);
+}
+
+void test_eachDigitWithItsCorrespondingNumberGaps_noFigures() {
+    char s[MAX_STRING_SIZE] = "SERG";
+    eachDigitWithItsCorrespondingNumberGaps(s);
+    ASSERT_STRING("SERG", s);
+}
+
+void test_eachDigitWithItsCorrespondingNumberGaps_noLetters() {
+    char s[MAX_STRING_SIZE] = "12";
+    eachDigitWithItsCorrespondingNumberGaps(s);
+    ASSERT_STRING("   ", s);
+}
+
+void test_eachDigitWithItsCorrespondingNumberGaps() {
+    test_eachDigitWithItsCorrespondingNumberGaps_emptyString();
+    test_eachDigitWithItsCorrespondingNumberGaps_lettersAndNumbers();
+    test_eachDigitWithItsCorrespondingNumberGaps_noFigures();
+    test_eachDigitWithItsCorrespondingNumberGaps_noLetters();
+}
+
 #endif

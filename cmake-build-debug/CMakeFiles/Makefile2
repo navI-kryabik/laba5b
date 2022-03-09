@@ -87,7 +87,7 @@ CMakeFiles/5b.dir/all: CMakeFiles/str.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/5b.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start F:\Programm\5b\cmake-build-debug\CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start F:\Programm\5b\cmake-build-debug\CMakeFiles 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/5b.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start F:\Programm\5b\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/5b.dir/rule
@@ -108,12 +108,12 @@ CMakeFiles/5b.dir/clean:
 CMakeFiles/str.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=F:\Programm\5b\cmake-build-debug\CMakeFiles --progress-num=7,8 "Built target str"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=F:\Programm\5b\cmake-build-debug\CMakeFiles --progress-num=7,8,9 "Built target str"
 .PHONY : CMakeFiles/str.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/str.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start F:\Programm\5b\cmake-build-debug\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start F:\Programm\5b\cmake-build-debug\CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/str.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start F:\Programm\5b\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/str.dir/rule

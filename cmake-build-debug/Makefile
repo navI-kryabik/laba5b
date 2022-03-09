@@ -240,29 +240,32 @@ string/string_.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/string/string_.c.s
 .PHONY : string/string_.c.s
 
-string/tasks/replacingNumbersWithSpaces.obj: string/tasks/replacingNumbersWithSpaces.c.obj
-.PHONY : string/tasks/replacingNumbersWithSpaces.obj
+string/tasks/puttingWordsInReverseOrder.obj: string/tasks/puttingWordsInReverseOrder.c.obj
+.PHONY : string/tasks/puttingWordsInReverseOrder.obj
 
 # target to build an object file
-string/tasks/replacingNumbersWithSpaces.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\5b.dir\build.make CMakeFiles/5b.dir/string/tasks/replacingNumbersWithSpaces.c.obj
-.PHONY : string/tasks/replacingNumbersWithSpaces.c.obj
+string/tasks/puttingWordsInReverseOrder.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\5b.dir\build.make CMakeFiles/5b.dir/string/tasks/puttingWordsInReverseOrder.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/string/tasks/puttingWordsInReverseOrder.c.obj
+.PHONY : string/tasks/puttingWordsInReverseOrder.c.obj
 
-string/tasks/replacingNumbersWithSpaces.i: string/tasks/replacingNumbersWithSpaces.c.i
-.PHONY : string/tasks/replacingNumbersWithSpaces.i
+string/tasks/puttingWordsInReverseOrder.i: string/tasks/puttingWordsInReverseOrder.c.i
+.PHONY : string/tasks/puttingWordsInReverseOrder.i
 
 # target to preprocess a source file
-string/tasks/replacingNumbersWithSpaces.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\5b.dir\build.make CMakeFiles/5b.dir/string/tasks/replacingNumbersWithSpaces.c.i
-.PHONY : string/tasks/replacingNumbersWithSpaces.c.i
+string/tasks/puttingWordsInReverseOrder.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\5b.dir\build.make CMakeFiles/5b.dir/string/tasks/puttingWordsInReverseOrder.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/string/tasks/puttingWordsInReverseOrder.c.i
+.PHONY : string/tasks/puttingWordsInReverseOrder.c.i
 
-string/tasks/replacingNumbersWithSpaces.s: string/tasks/replacingNumbersWithSpaces.c.s
-.PHONY : string/tasks/replacingNumbersWithSpaces.s
+string/tasks/puttingWordsInReverseOrder.s: string/tasks/puttingWordsInReverseOrder.c.s
+.PHONY : string/tasks/puttingWordsInReverseOrder.s
 
 # target to generate assembly for a file
-string/tasks/replacingNumbersWithSpaces.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\5b.dir\build.make CMakeFiles/5b.dir/string/tasks/replacingNumbersWithSpaces.c.s
-.PHONY : string/tasks/replacingNumbersWithSpaces.c.s
+string/tasks/puttingWordsInReverseOrder.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\5b.dir\build.make CMakeFiles/5b.dir/string/tasks/puttingWordsInReverseOrder.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/string/tasks/puttingWordsInReverseOrder.c.s
+.PHONY : string/tasks/puttingWordsInReverseOrder.c.s
 
 # Help Target
 help:
@@ -286,9 +289,9 @@ help:
 	@echo ... string/string_.obj
 	@echo ... string/string_.i
 	@echo ... string/string_.s
-	@echo ... string/tasks/replacingNumbersWithSpaces.obj
-	@echo ... string/tasks/replacingNumbersWithSpaces.i
-	@echo ... string/tasks/replacingNumbersWithSpaces.s
+	@echo ... string/tasks/puttingWordsInReverseOrder.obj
+	@echo ... string/tasks/puttingWordsInReverseOrder.i
+	@echo ... string/tasks/puttingWordsInReverseOrder.s
 .PHONY : help
 
 

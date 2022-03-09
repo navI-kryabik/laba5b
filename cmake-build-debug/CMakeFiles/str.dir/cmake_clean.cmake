@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/str.dir/string/string_.c.obj"
+  "CMakeFiles/str.dir/string/tasks/puttingWordsInReverseOrder.c.obj"
   "libstr.a"
   "libstr.pdb"
 )

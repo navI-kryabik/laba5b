@@ -133,12 +133,21 @@
 			<Option target="5b"/>
 			<Option target="str"/>
 		</Unit>
-		<Unit filename="F:/Programm/5b/string/tasks/removeNonLetters.h">
+		<Unit filename="F:/Programm/5b/string/tasks/puttingWordsInReverseOrder.c">
 			<Option target="5b"/>
 			<Option target="str"/>
 		</Unit>
-		<Unit filename="F:/Programm/5b/string/tasks/replacingNumbersWithSpaces.c">
+		<Unit filename="F:/Programm/5b/string/tasks/puttingWordsInReverseOrder.h">
 			<Option target="5b"/>
+			<Option target="str"/>
+		</Unit>
+		<Unit filename="F:/Programm/5b/string/tasks/removeAdjacentEqualLetters.h">
+			<Option target="5b"/>
+			<Option target="str"/>
+		</Unit>
+		<Unit filename="F:/Programm/5b/string/tasks/removeNonLetters.h">
+			<Option target="5b"/>
+			<Option target="str"/>
 		</Unit>
 		<Unit filename="F:/Programm/5b/string/tasks/replacingNumbersWithSpaces.h">
 			<Option target="5b"/>
