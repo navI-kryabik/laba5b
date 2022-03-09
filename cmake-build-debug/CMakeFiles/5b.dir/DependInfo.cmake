@@ -12,7 +12,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "F:/Programm/5b/libs/data_structures/vector/vector.c" "F:/Programm/5b/cmake-build-debug/CMakeFiles/5b.dir/libs/data_structures/vector/vector.c.obj"
   "F:/Programm/5b/main.c" "F:/Programm/5b/cmake-build-debug/CMakeFiles/5b.dir/main.c.obj"
   "F:/Programm/5b/string/string_.c" "F:/Programm/5b/cmake-build-debug/CMakeFiles/5b.dir/string/string_.c.obj"
-  "F:/Programm/5b/string/tasks/puttingWordsInReverseOrder.c" "F:/Programm/5b/cmake-build-debug/CMakeFiles/5b.dir/string/tasks/puttingWordsInReverseOrder.c.obj"
+  "F:/Programm/5b/string/tasks/haveTheSameWords.c" "F:/Programm/5b/cmake-build-debug/CMakeFiles/5b.dir/string/tasks/haveTheSameWords.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

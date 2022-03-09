@@ -240,32 +240,32 @@ string/string_.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/string/string_.c.s
 .PHONY : string/string_.c.s
 
-string/tasks/puttingWordsInReverseOrder.obj: string/tasks/puttingWordsInReverseOrder.c.obj
-.PHONY : string/tasks/puttingWordsInReverseOrder.obj
+string/tasks/haveTheSameWords.obj: string/tasks/haveTheSameWords.c.obj
+.PHONY : string/tasks/haveTheSameWords.obj
 
 # target to build an object file
-string/tasks/puttingWordsInReverseOrder.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\5b.dir\build.make CMakeFiles/5b.dir/string/tasks/puttingWordsInReverseOrder.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/string/tasks/puttingWordsInReverseOrder.c.obj
-.PHONY : string/tasks/puttingWordsInReverseOrder.c.obj
+string/tasks/haveTheSameWords.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\5b.dir\build.make CMakeFiles/5b.dir/string/tasks/haveTheSameWords.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/string/tasks/haveTheSameWords.c.obj
+.PHONY : string/tasks/haveTheSameWords.c.obj
 
-string/tasks/puttingWordsInReverseOrder.i: string/tasks/puttingWordsInReverseOrder.c.i
-.PHONY : string/tasks/puttingWordsInReverseOrder.i
+string/tasks/haveTheSameWords.i: string/tasks/haveTheSameWords.c.i
+.PHONY : string/tasks/haveTheSameWords.i
 
 # target to preprocess a source file
-string/tasks/puttingWordsInReverseOrder.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\5b.dir\build.make CMakeFiles/5b.dir/string/tasks/puttingWordsInReverseOrder.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/string/tasks/puttingWordsInReverseOrder.c.i
-.PHONY : string/tasks/puttingWordsInReverseOrder.c.i
+string/tasks/haveTheSameWords.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\5b.dir\build.make CMakeFiles/5b.dir/string/tasks/haveTheSameWords.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/string/tasks/haveTheSameWords.c.i
+.PHONY : string/tasks/haveTheSameWords.c.i
 
-string/tasks/puttingWordsInReverseOrder.s: string/tasks/puttingWordsInReverseOrder.c.s
-.PHONY : string/tasks/puttingWordsInReverseOrder.s
+string/tasks/haveTheSameWords.s: string/tasks/haveTheSameWords.c.s
+.PHONY : string/tasks/haveTheSameWords.s
 
 # target to generate assembly for a file
-string/tasks/puttingWordsInReverseOrder.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\5b.dir\build.make CMakeFiles/5b.dir/string/tasks/puttingWordsInReverseOrder.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/string/tasks/puttingWordsInReverseOrder.c.s
-.PHONY : string/tasks/puttingWordsInReverseOrder.c.s
+string/tasks/haveTheSameWords.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\5b.dir\build.make CMakeFiles/5b.dir/string/tasks/haveTheSameWords.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/string/tasks/haveTheSameWords.c.s
+.PHONY : string/tasks/haveTheSameWords.c.s
 
 # Help Target
 help:
@@ -289,9 +289,9 @@ help:
 	@echo ... string/string_.obj
 	@echo ... string/string_.i
 	@echo ... string/string_.s
-	@echo ... string/tasks/puttingWordsInReverseOrder.obj
-	@echo ... string/tasks/puttingWordsInReverseOrder.i
-	@echo ... string/tasks/puttingWordsInReverseOrder.s
+	@echo ... string/tasks/haveTheSameWords.obj
+	@echo ... string/tasks/haveTheSameWords.i
+	@echo ... string/tasks/haveTheSameWords.s
 .PHONY : help
 
 

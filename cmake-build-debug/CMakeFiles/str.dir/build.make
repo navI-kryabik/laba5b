@@ -78,29 +78,29 @@ CMakeFiles/str.dir/string/string_.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/str.dir/string/string_.c.s"
 	F:\MinGw\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S F:\Programm\5b\string\string_.c -o CMakeFiles\str.dir\string\string_.c.s
 
-CMakeFiles/str.dir/string/tasks/puttingWordsInReverseOrder.c.obj: CMakeFiles/str.dir/flags.make
-CMakeFiles/str.dir/string/tasks/puttingWordsInReverseOrder.c.obj: ../string/tasks/puttingWordsInReverseOrder.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:\Programm\5b\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/str.dir/string/tasks/puttingWordsInReverseOrder.c.obj"
-	F:\MinGw\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\str.dir\string\tasks\puttingWordsInReverseOrder.c.obj -c F:\Programm\5b\string\tasks\puttingWordsInReverseOrder.c
+CMakeFiles/str.dir/string/tasks/haveTheSameWords.c.obj: CMakeFiles/str.dir/flags.make
+CMakeFiles/str.dir/string/tasks/haveTheSameWords.c.obj: ../string/tasks/haveTheSameWords.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:\Programm\5b\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/str.dir/string/tasks/haveTheSameWords.c.obj"
+	F:\MinGw\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\str.dir\string\tasks\haveTheSameWords.c.obj -c F:\Programm\5b\string\tasks\haveTheSameWords.c
 
-CMakeFiles/str.dir/string/tasks/puttingWordsInReverseOrder.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/str.dir/string/tasks/puttingWordsInReverseOrder.c.i"
-	F:\MinGw\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E F:\Programm\5b\string\tasks\puttingWordsInReverseOrder.c > CMakeFiles\str.dir\string\tasks\puttingWordsInReverseOrder.c.i
+CMakeFiles/str.dir/string/tasks/haveTheSameWords.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/str.dir/string/tasks/haveTheSameWords.c.i"
+	F:\MinGw\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E F:\Programm\5b\string\tasks\haveTheSameWords.c > CMakeFiles\str.dir\string\tasks\haveTheSameWords.c.i
 
-CMakeFiles/str.dir/string/tasks/puttingWordsInReverseOrder.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/str.dir/string/tasks/puttingWordsInReverseOrder.c.s"
-	F:\MinGw\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S F:\Programm\5b\string\tasks\puttingWordsInReverseOrder.c -o CMakeFiles\str.dir\string\tasks\puttingWordsInReverseOrder.c.s
+CMakeFiles/str.dir/string/tasks/haveTheSameWords.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/str.dir/string/tasks/haveTheSameWords.c.s"
+	F:\MinGw\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S F:\Programm\5b\string\tasks\haveTheSameWords.c -o CMakeFiles\str.dir\string\tasks\haveTheSameWords.c.s
 
 # Object files for target str
 str_OBJECTS = \
 "CMakeFiles/str.dir/string/string_.c.obj" \
-"CMakeFiles/str.dir/string/tasks/puttingWordsInReverseOrder.c.obj"
+"CMakeFiles/str.dir/string/tasks/haveTheSameWords.c.obj"
 
 # External object files for target str
 str_EXTERNAL_OBJECTS =
 
 libstr.a: CMakeFiles/str.dir/string/string_.c.obj
-libstr.a: CMakeFiles/str.dir/string/tasks/puttingWordsInReverseOrder.c.obj
+libstr.a: CMakeFiles/str.dir/string/tasks/haveTheSameWords.c.obj
 libstr.a: CMakeFiles/str.dir/build.make
 libstr.a: CMakeFiles/str.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=F:\Programm\5b\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library libstr.a"
